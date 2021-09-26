@@ -291,7 +291,7 @@ async def upload_a_file(
     file_name = ""
     file_name += os.path.basename(path)
     caption_str += "</code>"
-    caption_str += file_name
+    caption_str += os.path.dirname
     caption_str += "</code>"
     metadata = extractMetadata(createParser(path))
 
@@ -498,7 +498,7 @@ async def upload_single_file(
     file_name = ""
     file_name += os.path.basename(path)
     caption_str = ""
-    caption_str += file_name
+    caption_str += os.path.dirname
     caption_str += ""
 
     if user_msg is None:
