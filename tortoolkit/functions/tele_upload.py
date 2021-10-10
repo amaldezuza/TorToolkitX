@@ -601,7 +601,7 @@ async def upload_single_file(
                         height=height,
                         duration=duration,
                         supports_streaming=True,
-                        caption=caption_str,
+                        caption=local_file_name,
                     )
                     # quote=True,
                 )
@@ -614,7 +614,7 @@ async def upload_single_file(
                     width=width,
                     height=height,
                     thumb=thumb,
-                    caption=caption_str,
+                    caption=local_file_name,
                     supports_streaming=True,
                     disable_notification=True,
                     # reply_to_message_id=message.reply_to_message.message_id,
