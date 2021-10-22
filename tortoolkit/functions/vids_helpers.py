@@ -112,7 +112,7 @@ async def split_file(path, max_size, force_docs=False):
 
             # file name generate
             parted_file_name = "{}_PART_{}.{}".format(
-                str(base_name), str(i).zfill(5), str(input_extension)
+                str(base_name), str(i).zfill(2), str(input_extension)
             )
 
             output_file = os.path.join(split_dir, parted_file_name)
