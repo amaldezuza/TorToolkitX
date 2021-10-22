@@ -111,7 +111,7 @@ async def split_file(path, max_size, force_docs=False):
         while end_time <= total_duration:
 
             # file name generate
-            parted_file_name = "{}_PART_{}.{}".format(
+            parted_file_name = "{} Part {}.{}".format(
                 str(base_name), str(i).zfill(2), str(input_extension)
             )
 
